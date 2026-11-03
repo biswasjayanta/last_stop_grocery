@@ -1,0 +1,167 @@
+{
+  "settings": {
+    "weights": {
+      "snap": 1,
+      "inc": 1,
+      "groc": 1,
+      "drive": 1
+    },
+    "walk_minutes": 15,
+    "chains": "all"
+  },
+  "qol_years": {
+    "snap": 2025,
+    "groc": 2025,
+    "grocU": 2025,
+    "inc": 2024,
+    "transit": 2025,
+    "drive": 2024,
+    "pop": 2020,
+    "hu": 2025
+  },
+  "grocery_proximity_blanks": {
+    "blank_latest": 149,
+    "explicit_zero_latest": 5,
+    "share_of_blanks_zero_in_2022": 0.812,
+    "zero_in_2022": 142
+  },
+  "npas": {
+    "total": 459,
+    "populated": 457,
+    "population_2020": 1115476
+  },
+  "bivariate_breaks": {
+    "food_assistance_terciles_pct": [
+      7.6,
+      23.7
+    ],
+    "grocery_proximity_median_of_nonzero_pct": 35.5
+  },
+  "high_food_assistance_and_no_grocery": {
+    "npas": 65,
+    "population": 127999
+  },
+  "top20_need": {
+    "npas": 92,
+    "population": 198045,
+    "no_chain_grocery_within_half_mile": {
+      "npas": 63,
+      "population": 119955
+    },
+    "land_share_within_15min_walk_of_grocery": 0.14,
+    "land_share_within_15min_walk_of_grocery_all_populated": 0.179,
+    "by_sector_from_uptown": {
+      "E": 24,
+      "N": 15,
+      "NE": 14,
+      "NW": 12,
+      "W": 11,
+      "SE": 8,
+      "SW": 6,
+      "S": 2
+    },
+    "south_of_uptown": 16,
+    "east_north_west_of_uptown": 76,
+    "median_km_to_nearest_lynx_station": 4.0,
+    "within_15min_walk_of_lynx": {
+      "any_overlap": 21,
+      "at_least_10pct": 11,
+      "at_least_25pct": 9,
+      "at_least_half": 6,
+      "residents_estimate": 14190,
+      "residents_estimate_share": 0.072,
+      "note": "residents assumed spread evenly within each NPA"
+    }
+  },
+  "stations_reaching_a_store": {
+    "5_min": {
+      "blue": 3,
+      "gold": 1
+    },
+    "10_min": {
+      "blue": 8,
+      "gold": 4
+    },
+    "15_min": {
+      "blue": 16,
+      "gold": 12
+    }
+  },
+  "stations_total": {
+    "blue": 26,
+    "gold": 17
+  },
+  "priority_stations": [
+    {
+      "line": "blue",
+      "station": "Tom Hunter",
+      "need": 0.85,
+      "residents_15min": 6582,
+      "nearest_store": "Walmart Supercenter",
+      "nearest_store_km": 2.0,
+      "walkshed_npas": [
+        [
+          234,
+          0.337
+        ],
+        [
+          103,
+          0.251
+        ],
+        [
+          101,
+          0.196
+        ],
+        [
+          304,
+          0.136
+        ],
+        [
+          291,
+          0.04
+        ],
+        [
+          371,
+          0.04
+        ]
+      ]
+    },
+    {
+      "line": "blue",
+      "station": "Old Concord Rd",
+      "need": 0.88,
+      "residents_15min": 995,
+      "nearest_store": "Save-A-Lot",
+      "nearest_store_km": 1.2,
+      "walkshed_npas": [
+        [
+          371,
+          0.929
+        ],
+        [
+          234,
+          0.059
+        ]
+      ]
+    }
+  ],
+  "gold_line_need_quintiles": {
+    "McDowell Street": 3,
+    "CTC/Arena": 3,
+    "Johnson & Wales": 3,
+    "French Street": 4,
+    "Bruns Avenue": 4,
+    "Charlotte Gateway Station": 3,
+    "Tryon Street": 3,
+    "Wesley Heights Way": 3,
+    "Johnson C. Smith University": 4,
+    "Irwin Avenue": 3,
+    "Elizabeth and Hawthorne": 2,
+    "Hawthorne and 8th": 2,
+    "Mint Street": 3,
+    "Davidson St": 3,
+    "Hawthorne and 5th": 2,
+    "Sunnyside": 3,
+    "Central Piedmont Community College": 2
+  }
+}
