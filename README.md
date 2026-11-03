@@ -56,7 +56,6 @@ The page works in light and dark mode and on phones.
 - Johnson C. Smith University (Gold Line) has no 15 minute walkshed in the source data.
 - One BJ's Wholesale Club has no walkshed in the source data and appears as a point only.
 - Population figures are model estimates from a 100 m grid and are rounded for display.
-- Without a Mapbox token the map draws on a plain background (see *Basemap* below).
 
 ## Run it
 
@@ -65,26 +64,15 @@ The whole map is one self-contained file, `index.html`. All data is embedded in 
 - **Locally:** open `index.html` in a browser.
 - **GitHub Pages:** push `index.html`, `README.md` and `screenshot.png` to a repository, then go to *Settings → Pages*, choose *Deploy from a branch*, select `main` and `/ (root)`, and save. The map appears at `https://<your-github-username>.github.io/<repository-name>/`.
 
-## Basemap (Mapbox)
+## Basemap (OpenStreetMap)
 
-Streets come from Mapbox's Light and Dark styles, recoloured at load time to match the map's palette: roads in white (or slate in dark mode) on the page's grey ground, muted water and parks, and points of interest and transit labels hidden so the walksheds stay readable. Walkshed fills are drawn at about 75% opacity so the street grid shows through. The basemap follows the page's light or dark theme and turns with the compass.
-
-To turn it on:
-
-1. Create a free account at [mapbox.com](https://www.mapbox.com/) and copy a **public** access token (it starts with `pk.`).
-2. In `index.html`, find `__MAPBOX_TOKEN__` and replace it with your token, keeping the quotes:
-   ```js
-   const MAPBOX_TOKEN = 'pk.your_token_here';
-   ```
-3. In your Mapbox account, restrict the token to your GitHub Pages address (for example `https://<your-github-username>.github.io/*`) so it can't be reused elsewhere.
-
-Public tokens are designed to sit in web pages, but never use a secret (`sk.`) token. If the token is missing or Mapbox can't be reached, the map falls back to the plain background and everything else keeps working. The Mapbox logo and the © Mapbox / © OpenStreetMap attribution shown in the bottom-left corner are required by Mapbox's terms; keep them visible.
+© OpenStreetMap attribution shown in the bottom-left corner are required by Mapbox's terms; keep them visible.
 
 ## Built with
 
 - [D3.js](https://d3js.org/) for projection, zoom, scales and the profile chart
 - HTML Canvas for the walkshed overlay
-- [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/) for the basemap (© Mapbox, © OpenStreetMap contributors)
+- © OpenStreetMap contributors
 - Python (GeoPandas, Shapely) for data preparation
 - Typefaces: Archivo, Public Sans and IBM Plex Mono (Google Fonts)
 
