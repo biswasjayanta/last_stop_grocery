@@ -6,7 +6,7 @@ An interactive map of Charlotte, North Carolina, built for the UNC Charlotte GIS
 
 ![Screenshot of the Last Stop: Groceries map](screenshot.png)
 
-**Live map:** `https://<your-github-username>.github.io/<repository-name>/`
+**Live map:** `https://biswasjayanta.github.io/last_stop_grocery/`
 
 ---
 
